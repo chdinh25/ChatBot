@@ -37,6 +37,8 @@ while True:
     if you == "":
         # If nothing was heard, prompt the user to try again
         thought = "I can't hear you, please try again"
+    elif "how are you" in you:
+        thought = "I'm doing well. How are you doing?"
     elif "hello" in you:
         # Respond to a message containing the word "hello"
         thought = "Hello"
@@ -66,7 +68,7 @@ while True:
         # Break the loop to stop the chat bot
         break
     else:
-        thought = "I'm good. How are you?"
+        thought = "How can I help you today?"
     # Display the chat bot's response
     print("Robot: " + thought)
 
